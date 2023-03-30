@@ -21,5 +21,46 @@ header .subtitle{
     font-size: 1rem;
     margin-bottom: 30px;
 }
-/* #47bfe4
-#0f0e17 */
+
+main{
+    padding: 0 200px;
+}
+
+main .container{
+    width: 100%;
+}
+
+main .container:after,
+main .container .card-profile:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main .container .card-profile{
+    float: left;
+    width: 32%;
+    background-color: #0f0e17;
+    margin-bottom: 60px;
+}
+
+main .container .card-profile:nth-child(3n+2){
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+main .container .card-profile img{
+    float: left;
+    height: calc(2.5rem*3 + 27px*2);
+}
+
+main .container .card-profile .box-info{
+    float: left;
+    padding: 27px;
+    color: white;
+    line-height: 2.5rem;
+}
+
+main .container .card-profile .email{
+    color:#47bfe4;
+}
